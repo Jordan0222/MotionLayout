@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
                 endId: Int,
                 progress: Float
             ) {
-                Log.d(TAG, "onTransitionChange: $progress")
                 if(preProgress < progress) {
                     motionLayout?.progress = 1F
                 } else {
