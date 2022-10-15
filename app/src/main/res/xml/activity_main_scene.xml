@@ -24,7 +24,8 @@
         <OnSwipe
             motion:touchAnchorId="@+id/main_container"
             motion:dragDirection="dragDown"
-            motion:touchAnchorSide="bottom" />
+            motion:touchAnchorSide="bottom"
+            motion:autoCompleteMode="continuousVelocity" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
