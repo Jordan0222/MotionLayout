@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        ViewUtil.init(application)
+        val width = ViewUtil.getScreenWidth()
+        Log.d(TAG, "onCreate: $width")
+
         binding.motionLayout.setTransitionListener(object : MotionLayout.TransitionListener {
             override fun onTransitionStarted(
                 motionLayout: MotionLayout?,
